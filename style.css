@@ -5,9 +5,8 @@ body{
     background-color: black;
 }
 .container1{
-    width: 100%;
+    max-width: 100%;
     height: 600px;
-    border: 2px solid red;
     background-image: linear-gradient(rgb(10, 10, 10),
                                     rgb(34, 33, 33),
                                      rgb(26, 26, 26));
@@ -25,7 +24,7 @@ body{
     width: 50%;
     height: 100%;
     font-size: xx-large;
-    color: brown;
+    color:rgb(230, 83, 60);
     display: flex;
     justify-content: left;
     align-items: center;
@@ -58,15 +57,14 @@ body{
     display: inline-block;
     justify-content: center;
     align-items: right;
-    margin-right: 7px;
+    margin-right: 10px;
     padding: 10px;
     line-height: 10px;
+    border-radius: 50px;
     
 }
-.navitem2 ul li:first-child{
-    background-color: brown;
-    border-radius: 50px;
-
+.navitem2 ul li:hover{
+    background-color: rgb(230, 83, 60);
 }
 .bar3{
     visibility: hidden;
@@ -74,20 +72,110 @@ body{
 .banner{
     width: 100%;
     height: 450px;
-    border: 2px dotted blue;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    
 }
 .text{
     width: 100%;
     height: 450px;
-    border: 2px solid white;
+    color: white;
+    font-size: xx-large;
 }
+.text h1{
+    margin-left: 20%;
+    line-height: 70px;
+}
+.text h1 i{
+    font-family: 'Miama', sans-serif;
+}
+.text p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: small;
+    text-align: center;
+    margin-right: 20%;
+    margin-top: 0;
+}
+.btn button{
+    width: 224px;
+    height: 54px;
+    background: none;
+    color: white;
+    border-radius: 50px;
+}
+.btn button:hover{
+    background-color: rgb(230, 83, 60);
+}
+.btn{
+    margin-left: 20%;
+}
+@import url('https://fonts.cdnfonts.com/css/miama?styles=170364');
 .picture{
     width: 100%;
     height: 450px;
-    border: 2px solid burlywood;
+    display: flex;
+    position: relative;
 }
+.imag{
+    width: 100%;
+    height: 100%;
+    margin-left: 35%;
+}
+.imag img{
+    width: 100%;
+    height: 100%;
+}
+.free{
+    width: 60%;
+    height: 80px;
+    margin-top: 120px;
+    position: relative;
+    z-index: 1;
+    right: 80px;
+    border-radius: 10px;
+    color: white;
+    line-height: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+.free p{
+    color: rgb(255, 255, 255, 0.5);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.free p b{
+    font-size: xx-large;
+    color: white;
+}
+.video{
+    width: 185px;
+    height: 80px;
+    position: absolute;
+    top: 320px;
+    right: 380px;
+    border-radius: 20px;
+    z-index: 2;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.playbutton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: rgb(230, 83, 60);
+}
+.video p{
+    margin-left: 20px;
+    color:rgb(255, 255, 255, 0.5);
+}
+.video p b{
+    color: white;
+    font-size: xx-large;
+}
+
+
 
 
 
@@ -105,6 +193,48 @@ body{
     }
     .fa-solid.fa-bars{
         margin-left: 100px;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .text h1{
+        margin-left: 2%;
+       font-size: larger;
+       line-height: 40px;
+
+    }
+    .header{
+        margin-left: 2%;
+    }
+    .text p{
+        text-align: left;
+        margin-left: 2%;
+    }
+    .container1{
+        background-image: linear-gradient(rgb(10, 10, 10),
+                                    rgb(34, 33, 33),
+                                     rgb(26, 26, 26));
+        height: 1450px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0px;
+    }
+    .btn{
+        margin-left: 2%;
+    }
+    .btn button{
+        width: 170px;
+    }
+    .imag{
+        margin-left: 10%;
+        width: 50%;
+    }
+    .free{
+        margin-right: 18%;
+        width: 150px;
+        position: absolute;
+        z-index: 2;
     }
     
 }
