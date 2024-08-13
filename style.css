@@ -210,7 +210,6 @@ body{
     height: 274px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-columns: ;
 }
 .container2s1 div{
     width: 180px;
@@ -228,6 +227,65 @@ body{
 .container2s1 div p{
     color: rgb(255, 255, 255, 0.5);
     font-size: small;
+}
+.section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section3{
+    width: 80%;
+    height: 450px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px ;
+}
+.secton3s1{
+   width: 85%;
+   height: 371px; 
+   margin-top: 40px;
+   margin-left: 10%;
+   border-radius: 20px;
+}
+.secton3s1 h1{
+    color: white;
+    font-size: 60px;
+    margin-top: 0px;
+}
+.secton3s1 p{
+    color: rgb(255, 255, 255, 0.5);
+}
+.secton3s1 button{
+    width: 224px;
+    height: 54px;
+    background: none;
+    color: white;
+    border-radius: 50px;
+    font-size: medium;
+    margin-top: 40px;
+}
+.secton3s1 button:hover{
+    background-color:rgb(230, 83, 60) ;
+}
+
+.secton3s2{
+    width: 75%;
+    height: 371px;
+    margin-top: 40px;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+.secton3s2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: none;
+    object-position: 65% 30%;
 }
 
 
@@ -312,5 +370,19 @@ body{
         width: 300px;
         height: 60px;
     }
-    
+    .section3{
+        width: 85%;
+        height: 920px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        position: relative;
+        top: 1100px;
+    }
+    .secton3s2 img{
+        position: relative;
+        right: 35px;
+    }
+    .secton3s1{
+        text-align: left;
+    }
 }
