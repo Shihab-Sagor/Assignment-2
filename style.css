@@ -345,6 +345,169 @@ body{
     font-size: 25px;
     margin-top: 5px;
 }
+.bmi-header{
+    max-width: 60%;
+    height: 150px;
+    position: relative ;
+    left: 15%;
+}
+.bmi-header h1{
+    color: white;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.bmi-header p{
+    color:rgb(255, 255, 255, 0.5) ;
+    text-align: left;
+}
+.bmi-calculator{
+    max-width: 100%;
+    height: 350px;
+    background-color: rgb(34, 34, 34);
+}
+.bmi-box{
+    max-width: 80%;
+    height: 350px;
+    position: relative;
+    left: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.bmi-table{
+    width: 100%;
+    height: 350px;
+}
+.bmi-table h1{
+    color: white;
+    margin-left: 10%;
+}
+.bmi-table table{
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+    margin-left: 10%;
+}
+.bmi-table th{
+    color: white;
+}
+.bmi-table td{
+    color: rgb(255, 255, 255, 0.5);
+    
+}
+.bmi-table td, th{
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    text-align: left ;
+    margin-left: 20px;
+    position: relative;
+    left: 20px;
+}
+.bmi-calculating{
+    width: 100%;
+    height: 350px;
+}
+.bmi-calculating h1{
+    color: white;
+}
+.bmi-calculating p{
+    color: rgb(255, 255, 255, 0.5);
+}
+.input{
+    background-color:rgb(255, 255, 255, 0.1) ;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px;
+    color:rgb(255, 255, 255, 0.5);
+    padding-left: 20px;
+}
+#sex{
+    width: 220px;
+}
+#activity{
+    width:455px;
+}
+.run{
+    color: black;
+}
+.placeholder{
+    margin-left: 20px;
+}
+.submit{
+    background: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    position: relative;
+    top: 15px;
+}
+.submit:hover{
+    background-color: rgb(230, 83, 60);
+}
+.team-header{
+    width: 40%;
+    height:119px;
+    position: relative;
+    left: 30%;
+    text-align: center;
+}
+.team-header h1{
+    color: white;
+}
+.team-header p{
+    color:rgb(255, 255, 255, 0.5);
+}
+.team-bg{
+    max-width: 80%;
+    height: 680px;
+    position: relative;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.team-content{
+    width: 100%;
+    height: 620px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    margin-left: 35px;
+}
+.team-content div{
+    max-width: 300px;
+    height: 272px;
+    border-radius: 20px;
+    margin-top: 10px;
+    line-height: 5px;
+}
+.team-content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.title h3{
+    color: white;
+}
+.title p{
+    color: rgba(255, 255, 255, 0.5);
+}
+.title{
+    position: relative;
+    bottom: 80px;
+    left: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -387,14 +550,33 @@ body{
         text-align: left;
         margin-left: 2%;
     }
+    .text{
+        height: 300px;
+    }
     .container1{
         background-image: linear-gradient(rgb(10, 10, 10),
                                     rgb(34, 33, 33),
                                      rgb(26, 26, 26));
-        height: 1450px;
+        max-width: 100%;
+        height: 940px;
         display: grid;
         grid-template-columns: auto;
         gap: 0px;
+    }
+    .text{
+        position: absolute;
+        top: 150px;
+        left: 20px;
+    }
+    .picture{
+    position: absolute;
+    bottom: 0px;
+    top: 500px;
+    left: 20px;
+    }
+    .video{
+        position: absolute;
+        left: 20px;
     }
     .btn{
         margin-left: 2%;
@@ -454,5 +636,46 @@ body{
         position: relative;
         top: 1350px;
     }
+    .bmi-header{
+        position: relative;
+        top: 2550px;
+    }
+    .bmi-calculator{
+        position: relative;
+        top: 2600px;
+        height:700px;
+    }
+    .bmi-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .bmi-calculating{
+        position: relative;
+        left: 5px;
+        width: 525px;
+    }
+    .team-header{
+        position: relative;
+        top: 2600px;
+        width: 70%;
+        height: 150px;
+        position: relative;
+        left: 15%;
+    }
+    .team-bg{
+        position: relative;
+        top: 2600px;
+        height:1750px;
+    }
+    .team-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+    
+
+
 
 }
