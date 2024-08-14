@@ -500,6 +500,87 @@ body{
     bottom: 80px;
     left: 20px;
 }
+.futter{
+    width: 100%;
+    height: 489px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    margin-top: 20px;
+}
+.futter-content{
+    width: 80%;
+    height: 350px;
+    position: relative;
+    left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.futter-text{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.futter-list{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.futter-list2{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.futter-text{
+    line-height: 20px;
+}
+.futter-text h1{
+    color: rgb(230, 83, 60);
+    font-size: 70px;
+    font-style: italic;
+}
+.futter-text p{
+    color: rgba(255, 255, 255, 0.5);
+}
+.futter-list h1{
+    color: white;
+    margin-left: 40px;
+}
+.futter-list ul li{
+    list-style: none;
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.5) ;
+    margin-left: 40px;
+    line-height: 40px;
+}
+.futter-list a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+.futter-list2 h1{
+    color: white;
+    margin-left: 40px;
+}
+.futter-list2 ul li{
+    list-style: none;
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.5) ;
+    margin-left: 40px;
+    line-height: 50px;
+}
+.futter-list2 a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+.hr{
+    width: 80%;
+    color:rgba(255, 255, 255, 0.5) ;
+    margin-left: 10%;
+}
+.hr p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    text-align: center;
+}
+
 
 
 
@@ -672,7 +753,32 @@ body{
         grid-template-columns: repeat(1,1fr);
         position: absolute;
         top: 10px;
-        left: 5px;
+        left: 10px;
+    }
+    .futter{
+        position: relative;
+        top: 2600px;
+        height: 900px;
+    }
+    .futter-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hr{
+        position: relative;
+        top: 450px;
+    }
+    .futter-text{
+
+    }
+    .futter-list{
+        position: absolute;
+        top: 200px;
+
+    }
+    .futter-list2{
+        position: absolute;
+        top: 450px;
     }
     
 
